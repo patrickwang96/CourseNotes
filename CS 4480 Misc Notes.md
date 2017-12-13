@@ -267,3 +267,21 @@ class Mapper:
 ```
 
 
+## Apache Pig syntax
+
+```
+A = LOAD 'a.txt' AS (col11:chararray, col2:double, col3:int);
+B = FOREACH A GENERATE col1, ... ;
+DUMP B;
+C = B FILTER BY expression;
+D = C GROUP BY col1;
+
+X = JOIN A BY a1, B BY b1;
+
+
+E = JOIN A BY $0 LEFT OUTER, B BY $0;
+F = JOIN A BY $0 FULL, B BY $0;
+
+G = ORDER A by $0, DESC, f2 ASC;
+```
+
