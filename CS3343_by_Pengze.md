@@ -1,15 +1,15 @@
 # CS3343 Review
 
 ## Overall
-code implementation
-documentation
-group project
-JUnit
-terminologies
+code implementation<br>
+documentation<br>
+group project<br>
+JUnit<br>
+terminologies<br>
 
--Testing
--Debugging
--Refactoring
+-Testing<br>
+-Debugging<br>
+-Refactoring<br>
 
 ## Project Management (20%) (w3-4)
 - oroject scheduling
@@ -60,9 +60,9 @@ terminologies
 - **make documentation**
 
 ## Others
- Handwriting
- Similar to ++2015-16 semA++
- Coding Topic: ++16 Dec, 2017++
+ Handwriting<br>
+ Similar to ++2015-16 semA++<br>
+ Coding Topic: ++16 Dec, 2017++<br>
  
 ---
 
