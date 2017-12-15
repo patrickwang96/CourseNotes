@@ -71,7 +71,7 @@ while dest in Q:
     for v in Q:
         RELAX(u, v, w(u, v))
 ```
-Naive implementation: O(V^2^) <br>
+Naive implementation: O(V^2) <br>
 Using priority_queue: O(ElogV)
 
 ## 2 Divide and conquer
@@ -146,10 +146,75 @@ def c(i, j):
 ```
 
 #### 3.5 Bellman-Ford Algorithm
+```
+i=3
+vertex: s, u, v, x, y
+d: 0, 6, inf, 7, inf
+successor: s s - s -
+```
 #### 3.6 0-1 Knapsack Problem
+```python
+def OPT(i, w):
+    if i == 0:
+        return 0
+    if w(i) > W
+        return OPT(i-1, w)
+    return max{OPT(i-1, w), v(i)+OPT(i-1, w-w(i))}
+
+dp = []
+for i in range(n):
+    dp.append(OPT(i, W))
+print dp[n-1]
+```
 
 ## 4 Other Problems
 
 #### 4.1 String Matching - KMP Algorithm
+```python
+n=|T|
+m=|P|
+q=0
+for i in range(n):
+    while q>0 and P[q+1]≠T[i]:
+        q=f(q) # failure function
+    if P[q+1]==T[i]:
+        q=q+1
+    if q == m:
+        print "pattern occurs at i-m+1"
+        q=f(q) # failure function
+```
+Calculate **failure function**
+```
+if match: 
+    f(i) = f(i-1) + 1
+else: 
+    f(i) = f(f(i-1))
+```
+O(T+P)
+
 #### 4.2 Maximum Flow
+```
+FORD-FULKERSON-METHOD(G,s,t):
+    initialize flow f to 0
+    while (there exists an augmenting path p)
+        augment flow f along p
+    return f
+```
+- Net flow network: 11/16
+- Residual network: -> 11, <- 5
+
+With time O ( E |f*|),  the algorithm is not polynomial
+
+##### Maximum bipartite matching (sub-problem)
+- add a source and a destination
+- w = 1 for all edges
+
 #### 4.3 NP-Complete Problems
+- Examples of NPC Problems
+    - 3-Satisfiability Problem
+    - TSP
+    - Hamilton Circuit
+    - The Longest Simple Path
+    - Vertex Cover
+    - Steiner Minimum Tree
+
