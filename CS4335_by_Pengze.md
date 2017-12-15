@@ -105,7 +105,7 @@ Define p(j) = largest index i < j such that job i is compatible with j.
 def OPT(j):
     if j==0: 
         return 0
-    return max{v(j)+OPT(p(j)), OPT(p(j-1))}
+    return max{v(j)+OPT(p(j)), OPT(j-1)}
 ```
 - Computing p~j~ in O(n)
     - two pointers traverse from right to left
