@@ -268,6 +268,65 @@ Project Scheduling
 * All Projects have a Critical Path
 * accelerating non-critical tasks do not directly shorten the schedule
 
+## Week 07
+**Code Refacting**
+
+### Code Smell: Duplicated Code
+- Extract method
+- Pull Up Field
+- Form Template Method
+- Substitute Algorithm 
+- Extract class
+
+
+### Code Smell: Long Method 
+
+- Extract method
+- Replace Temp with Query
+- Introduce Parameter Object 
+- Replace Method with Method Object
+- Decompose Conditionals
+
+### Refactoring 
+- Write a set of test cases!
+- Looking for code smell 
+- If any case failed, debug the program or fallback to your original code.
+- Smell the codes and do refactoring until we do not find serious symptoms. 
+
+### Code Refactoring Template 
+- Encapsulate Field
+- Introduce NULL Object 
+- Parameterize Method
+- Extract Subclass 
+- Extract Interface
+- Pull Up Method 
+- Replace Type Code with State/Strategy 
+- Replace Inheritance with Delegation
+- Hide Deletgate
+
+## Week 08
+**Test Comprehensiveness**    
+- Exhaustive Testing: Test all possible inputs.    
+- Random Testing: Choose test cases Randomly among all possible inputs.   
+
+
+### Code Coverage 
+Code coverage is the **percentage** of a particular kind of program entities.   
+
+### Code-Based Control Flow Testing 
+
+#### Control-flow   
+- Statement Coverage 
+- Branch Coverage 
+- Loop Coverage 
+- Path Coverage 
+
+#### Predicate 
+- Condition Coverage (CC)
+- Decision Coverage (DC)
+- C/DC
+- MC/DC
+
 
 
 
